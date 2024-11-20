@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+      height: 50px;
+      width: auto;
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: black;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li a:hover, 
+  .nav-links li a.active {
+        color: #088187;
+  }
+
+  
+  .nav-links li {
+    margin: 0 10px;
+    list-style: none;
+    padding: 0 20px;
+    color: white;
+  }
+  
+  .nav-links a {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .car-card {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .car-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form label, form input, form select, form button {
+    font-size: 16px;
+  }
+  
+  form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .car-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .car-card {
+      width: 100%;
+    }
+  }
+  
