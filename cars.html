@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Available Cars</title>
+  <title>Cars - Car Rental Service</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <a href="index.html">
+    <a href="#home">
       <img src="images/logo.jpg" alt="Car Rental Service Logo" class="logo">
     </a>
-    <nav>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <nav class="nav" id="nav">
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cars.html" class="active">Cars</a></li>
-        <li><a href="book.html">Book</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="cars.html" target="_blank">Cars</a></li>
+          <li><a href="book.html" target="_blank">Book</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="cars" class="section">
+    <section class="section">
       <h2>Available Cars</h2>
       <div class="car-list">
         <div class="car-card">
@@ -35,7 +36,7 @@
           <p>Price: $80/day</p>
         </div>
         <div class="car-card">
-          <img src="images/sports car.jpg" alt="Sports Car">
+          <img src="images/sports_car.jpg" alt="Sports Car">
           <h3>Sports Car</h3>
           <p>Price: $120/day</p>
         </div>
@@ -57,5 +58,7 @@
       </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
