@@ -94,7 +94,13 @@ h2 {
   margin-bottom: 20px;
   color: #333
 }
-
+#book h2{
+      color: white;
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+}
 p {
   font-size: 1.1rem;
   max-width: 800px;
